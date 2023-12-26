@@ -2,14 +2,21 @@ FROM ruby:2.7.1-alpine3.11
 
 MAINTAINER Michael Karlesky <michael@karlesky.net>
 
-
 RUN apk --no-cache add \
   coreutils \
   gcc \
   gcovr \
   valgrind \
   libc-dev \
-  gdb
+  gdb \
+  avrdude \
+  avrdude-doc \
+  gcc-avr \
+  gcc-avr-doc \
+  avr-libc \
+  avr-libc-doc \
+  screen \
+  git
 
 ##
 ## Copy assets for inclusion in image
